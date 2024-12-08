@@ -30,7 +30,10 @@ export default function Header() {
 
           <div className="flex items-center justify-center gap-3">
             <span className="w-4 h-4 flex items-center justify-center">
-              <FaPhoneVolume className="w-[13.33px] h-[13.33px] text-[#ffffff]" />
+              <span  className="w-[13.33px] h-[13.33px] text-[#ffffff]">
+              <FaPhoneVolume/>
+              </span>
+              
             </span>
             <a href="(12345)67890)"> 
             <h1 className="w-[97px] h-[16px]  font-sans font-semibold text-sm sm:text-[16px] leading-4">
@@ -75,8 +78,8 @@ export default function Header() {
               <FaRegHeart />
             </div>
           </div>
-          <div>
-            <LuShoppingCart className="w-[24px] h-[24px]" />
+          <div className="w-[24px] h-[24px]">
+            <LuShoppingCart  />
           </div>
         </div>
       </div>

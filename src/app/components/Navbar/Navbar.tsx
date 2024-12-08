@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
-import { CiSearch } from "react-icons/ci";
+// import { CiSearch } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -62,9 +63,13 @@ function Navbar() {
                 type="search"
                 placeholder="Search"
               />
-              <CiSearch
+              {/* <CiSearch
                 className="text-xl w-[51px] h-[40px] bg-[#FB2E86] text-[#F3F9FF]"
-              />
+              /> */}
+
+              <div className="text-xl w-[51px] h-[40px] bg-[#FB2E86] text-[#F3F9FF] text-center">
+                <FaSearch />
+              </div>
             </div>
 
           
