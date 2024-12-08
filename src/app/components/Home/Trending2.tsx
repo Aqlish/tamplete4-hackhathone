@@ -76,26 +76,30 @@ export default function TrendingProducts() {
 
         {/* Right Sidebar */}
         <div className="md:col-span-1 text-[#151875]">
-          <div className="space-y-4">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="flex items-center gap-2">
-                <div className="relative w-12 h-12 bg-gray-100 rounded">
-                  {/* Placeholder image can be replaced dynamically if required */}
-                  <Image
-                    src="/22.png"
-                    alt="right"
-                    fill
-                    className="object-cover rounded"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-sm font-medium">Executive chair</h4>
-                  <span className="text-sm text-[#151875] line-through">$32.00</span>
-                </div>
-              </div>
-            ))}
-          </div>
+  <div className="space-y-4">
+    {[
+      { id: 1, image: "/a.png", title: "Executive Chair", price: "$32.00" },
+      { id: 2, image: "/b.png", title: "Comfort Sofa", price: "$45.00" },
+      { id: 3, image: "/c.png", title: "Modern Table", price: "$28.00" },
+    ].map((item) => (
+      <div key={item.id} className="flex items-center gap-2">
+        <div className="relative w-12 h-12 bg-gray-100 rounded">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover rounded"
+          />
         </div>
+        <div>
+          <h4 className="text-sm font-medium">{item.title}</h4>
+          <span className="text-sm text-[#151875] line-through">{item.price}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   );
