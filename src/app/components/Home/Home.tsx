@@ -127,7 +127,7 @@ function HeroSection() {
       </button>
 
       
-c
+
       
     </section>
   );
