@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
     const features = [
       { icon: '/13.png', title: '24/7 Support', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.' },
@@ -15,7 +17,7 @@ export default function Home() {
               key={index}
               className="flex flex-col items-center justify-center text-center bg-white p-6 rounded-lg shadow-2xl shadow-gray-200 w-[270px] h-[320px]"
             >
-              <img src={feature.icon} alt={feature.title} className="w-16 h-16 mb-4" />
+              <Image src={feature.icon} alt={feature.title} className="w-16 h-16 mb-4" />
               <h2 className="text-lg font-semibold">{feature.title}</h2>
               <p className="text-gray-500 mt-2">{feature.description}</p>
             </div>

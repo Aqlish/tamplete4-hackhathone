@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
     const products = [
       { id: 7, name: "Comfort Handy Craft", price: "$42.00", oldPrice: "$65.00" },
@@ -12,7 +13,7 @@ export default function Home() {
       return (
         <div className="border rounded-lg shadow-md p-4 bg-[#f7f7f7]">
           <div className="w-360 h-270 mx-auto">
-            <img
+            <Image
               src={image}
               alt={name}
               className="w-full h-250 object-cover rounded-t-lg mb-4"

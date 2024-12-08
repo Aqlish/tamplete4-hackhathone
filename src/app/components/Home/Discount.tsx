@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import Image from "next/image";
 const DiscountItem: React.FC = () => {
   return (
     <section className="py-16 bg-white">
@@ -43,7 +43,7 @@ const DiscountItem: React.FC = () => {
 
         {/* Right Content */}
         <div className="flex-1 ">
-          <img
+          <Image
             src="/25.5.png"
             alt="Chair"
             width={700}

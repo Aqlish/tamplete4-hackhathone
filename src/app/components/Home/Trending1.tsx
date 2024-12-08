@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProductFeature() {
     return (
       <div className="w-full min-h-[580px] bg-[#F1F0FF] p-4 sm:p-6 md:p-8 lg:p-12">
@@ -5,8 +7,8 @@ export default function ProductFeature() {
           {/* Image Section */}
           <div className="relative w-full md:w-1/2 flex justify-center">
             <div className="absolute inset-0 rounded-full transform -translate-x-4"></div>
-            <img
-              src="/Trending1.png"
+            <Image
+              src="/trending1.png"
               alt="B&B Italian Sofa"
               className="relative z-10 w-full max-w-[300px] md:max-w-[400px] mx-auto"
             />

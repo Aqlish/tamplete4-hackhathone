@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 const ProductGrid = () => {
   const products = [
     {
@@ -39,7 +39,7 @@ const ProductGrid = () => {
             className="group relative p-4 hover:bg-[#2F1AC4] hover:text-white rounded-lg shadow hover:shadow-lg transition"
           >
             <div className="flex items-center justify-center h-64 bg-[#F6F7FB]">
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="object-contain h-full"
